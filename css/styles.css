@@ -1,0 +1,113 @@
+/* general cfg      */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html, body {
+  min-height: 100%; 
+}
+
+body {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+#calc {
+  width: 400px;
+  padding: 0.5em;
+  background-color: #c4c4c4;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
+
+*html, #calc {
+  height: 100%;
+}
+
+#calc h3 {
+  font-size: .8em;
+  font-weight: 300;
+  color: #666;
+}
+
+/* operations */
+#operations {
+  text-align: right;
+}
+
+#previous-operation ,
+#current-operation {
+  min-height: 1.6em;
+  padding: .2em;
+  overflow-wrap: break-word;
+}
+
+#previous-operation {
+  color: #777;
+}
+
+#current-operation {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+/* buttons container */
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#buttons-container button {
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+#buttons-container .number {
+  background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+  background-color: #bababa;
+  border-color: #999;
+}
+
+#buttons-container #equal-btn {
+  grid-column: span 2;
+  background-color: #75a5cb;
+}
+
+#buttons-container #equal-btn:hover {
+  grid-column: span 2;
+  background-color: #3a91d8;
+}
+
+/* footer */
+#rodape {
+    bottom: 0;
+    color: #FFF;
+  font-size: .6em;
+  text-align: center;
+}
+
+#rodape:hover {
+  bottom: 0;
+  color: chocolate;
+font-size: .7em;
+text-align: center;
+cursor: pointer;
+transition: .3s;
+}
